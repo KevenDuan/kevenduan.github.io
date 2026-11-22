@@ -1,0 +1,135 @@
+#card {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	color: #93979e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: width ease 0.5s, height ease 0.5s;
+
+	.card-inner {
+		padding: 0;
+		border: 0;
+		width: 100%;
+		max-width: 700px;
+
+		@media screen and (max-width: 540px) {
+			header {
+				h1 {
+					font-size: 1rem !important;
+				}
+			}
+
+			ul {
+				li {
+					font-size: 0.8rem !important;
+				}
+			}
+		}
+
+		header {
+			// border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			margin-bottom: 40px;
+
+			img.avatar {
+				border: 3px solid #fff;
+				border-radius: 50%;
+				box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+				transition: 0.4s ease-in-out;
+				z-index: 2;
+				position: relative;
+			}
+
+			.signature-image {
+				position: relative;
+				z-index: 2;
+				display: block;
+				margin: clamp(16px, 2.5vh, 26px) auto 0;
+				max-width: 85%;
+				max-height: min(44vh, 380px);
+
+				@media screen and (max-height: 520px) {
+					max-height: min(24vh, 200px);
+				}
+			}
+
+			.signature-caption {
+				position: relative;
+				z-index: 2;
+				max-width: 85%;
+				margin: 8px auto 0;
+				font-size: 0.75rem;
+			}
+
+			h1 {
+				margin: 15px 15px 0px;
+				color: #fff;
+				font-size: 2rem;
+				line-height: 1.2em;
+				font-weight: 300;
+				z-index: 2;
+				position: relative;
+			}
+
+			.profile-intro {
+				position: relative;
+				z-index: 2;
+				max-width: min(90%, 560px);
+				margin: clamp(14px, 2.4vh, 24px) auto 0;
+				font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+				text-wrap: balance;
+
+				#signature {
+					margin: 0;
+					color: #edf2f8;
+					font-size: clamp(0.9rem, 2.1vw, 1.15rem);
+					font-weight: 550;
+					line-height: 1.35;
+				}
+
+				.research-interests {
+					margin: 6px 0 0;
+					color: #a6b1bf;
+					font-size: clamp(0.72rem, 1.55vw, 0.85rem);
+					line-height: 1.55;
+				}
+			}
+		}
+
+		ul {
+			position: relative;
+			margin: 0;
+			list-style-type: none;
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 12px;
+			width: 100%;
+			justify-content: space-around;
+			// border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+			padding-bottom: 40px;
+
+			li {
+				z-index: 2;
+				position: relative;
+				display: inline-block;
+				transition: all 0.2s;
+				flex: 1 1 64px;
+				overflow-wrap: anywhere;
+				// border-left: solid 0.1px hsla(0, 0%, 100%, 0.1);
+				// border-right: solid 0.1px hsla(0, 0%, 100%, 0.1);
+
+				a {
+					color: #b6b6b6;
+					transition: all 0.2s;
+
+					&:hover {
+						color: #f6f6f6;
+						text-shadow: 0 0 2px #f6f6f6;
+					}
+				}
+			}
+		}
+	}
+}

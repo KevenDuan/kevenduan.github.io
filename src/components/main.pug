@@ -1,0 +1,32 @@
+.content.content-main
+	#card
+		.card-inner.fade
+			header
+				img.avatar(src=`${main.avatar.link}` width=`${main.avatar.width}` height=`${main.avatar.height}` alt="avatar")
+				h1(data-translate="name") #{main.name}
+				.profile-intro
+					h2#signature(data-translate="signature") #{main.signature}
+					if main.researchInterests
+						p.research-interests= main.researchInterests
+				if main.signatureImage && main.signatureImage.link
+					img.signature-image(src=main.signatureImage.link alt=main.signatureImage.alt || "")
+					if main.signatureImage.caption
+						p.signature-caption= main.signatureImage.caption
+
+			ul
+				each item, key in main.ul
+					- const tag = item.href ? "a" : "span"
+					- const opensInNewTab = typeof item.newTab === "boolean" ? item.newTab : (key === "third" || key === "fourth")
+					- const target = item.href && opensInNewTab ? "_blank" : undefined
+					li
+						#{tag}(
+							href=item.href || undefined
+							aria-label=item.text
+							target=target
+							role=item.href ? undefined : "link"
+							aria-disabled=item.href ? undefined : "true"
+						)
+							i(class=`icon icon-${item.icon}` aria-hidden="true")
+							span(data-translate=item.text)= item.text
+
+	canvas.grid-background#gridCanvas

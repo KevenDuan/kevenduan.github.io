@@ -1,0 +1,61 @@
+{
+	"head": {
+		"title": "KevenDuan",
+		"description": "Author:KevenDuan,Category:Personal Blog",
+		"favicon": "favicon.ico"
+	},
+	"intro": {
+		"title": "KevenDuan",
+		"subtitle": "The best way to predict the future is to invent it.",
+		"enter": "PRESS START",
+		"supportAuthor": true,
+		"background": true
+	},
+	"main": {
+		"name": "KevenDuan",
+		"signature": "Artificial Intelligence Researcher",
+		"researchInterests": "Research interests include robot learning and legged robot locomotion.",
+		"signatureImage": {
+			"link": "assets/shantou.png",
+			"alt": "Taken at Shantou University",
+			"caption": "Taken at Shantou University"
+		},
+		"avatar": {
+			"link": "assets/avatar.jpg",
+			"height": "100",
+			"width": "100"
+		},
+		"ul": {
+			"About me": {
+				"href": "https://github.com/KevenDuan",
+				"icon": "xiaolian",
+				"text": "About me",
+				"newTab": true
+			},
+			"Blog": {
+				"href": "https://blog.csdn.net/Duanwxq",
+				"icon": "bokeyuan",
+				"text": "Blog",
+				"newTab": true
+			},
+			"Thinking": {
+				"href": "https://space.bilibili.com/91672543?spm_id_from=333.1007.0.0",
+				"icon": "other",
+				"text": "Thinking",
+				"newTab": true
+			},
+			"Email": {
+				"href": "mailto:26hduan@stu.edu.cn",
+				"icon": "email",
+				"text": "Email",
+				"newTab": true
+			},
+			"Github": {
+				"href": "https://github.com/KevenDuan",
+				"icon": "github",
+				"text": "Github",
+				"newTab": true
+			}
+		}
+	}
+}
